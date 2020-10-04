@@ -54,7 +54,6 @@
     width: 100%;
   }
   .home-welcome-slider__list {
-    /* will-change: transform; */
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -63,6 +62,7 @@
     position: relative;
     transition: transform 500ms ease;
     width: 100%;
+    will-change: transform;
   }
   .home-welcome-slider__item {
     height: 100%;
