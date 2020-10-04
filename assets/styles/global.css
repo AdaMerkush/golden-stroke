@@ -1,0 +1,108 @@
+:root {
+  --base-container-width: 1140px;
+  --base-font-family: 'Open Sans', arial, sans-serif;
+  --base-font-size: 16px;
+  --base-gap: 40px;
+  --base-radius: 20px;
+  --color-black-light: #1f1f1f;
+  --color-gold: #d7ad45;
+  --color-grey: #b5b5b5;
+  --font-family-title: 'Playfair Display', arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  font-family: var(--base-font-family);
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+input {
+  font-family: var(--base-font-family);
+}
+
+.h1 {
+  font-family: var(--font-family-title);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 96px;
+}
+.h2 {
+  font-family: var(--font-family-title);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.p {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.visibility-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--base-container-width);
+}
+
+.button {
+  background: var(--color-gold);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  height: 48px;
+  line-height: 24px;
+  padding: 12px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button_size_large {
+  height: 60px;
+  padding: 18px 20px;
+}
+.button_ghost {
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+.text-field {
+  background: #fff;
+  border: 1px solid var(--color-grey);
+  border-radius: 30px;
+  color: var(--color-grey);
+  font-size: 20px;
+  height: 48px;
+  padding: 12px 20px;
+}
+.text-field::placeholder {
+  color: #F6F6F6;
+}
+.text-field_size_large {
+  height: 60px;
+}
